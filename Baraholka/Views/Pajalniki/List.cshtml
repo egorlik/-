@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <h2>Все паяльники</h2>
+    @{ 
+        foreach(var Pajalki in Model)
+        {
+            <div>
+                <h2>Модель паяльника: @Pajalki.name</h2>
+                <p>Цена: @Pajalki.price.ToString("c")</p>
+             </div>
+        }
+
+    }
+</body>
+</html>
